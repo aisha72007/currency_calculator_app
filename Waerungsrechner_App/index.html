@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Währungsrechner</title>
+
+    <link rel="manifest" href="manifest.json" />
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="navbar">
+      <img class="menu" src="img/menu.png" alt="" />
+      Währungsrechner
+    </div>
+    <div id="main"> <div id="euro-to-dollar">
+      <div class="input-container">
+        <img class="flag" src="img/eu.png" alt="" />
+        <input value="100" id="euroField" type="number" />
+        <span>EUR</span>
+      </div>
+
+      <div class="container-center">
+        <img src="img/arrows.png" alt="" />
+      </div>
+      <div class="input-container">
+        <img class="flag" src="img/usa.png" alt="" />
+        <input id="usd" type="text" />
+        <span>USD</span>
+      </div>
+
+      <div class="container-center">
+        <button onclick="calc()">Berchnen</button>
+      </div>
+    </div>
+
+    <div id="dollar-to-euro">
+      <div class="input-container">
+        <img class="flag" src="img/usa.png" alt="" />
+        <input value="100" id="usdField" type="number" />
+        <span>USD</span>
+      </div>
+
+      <div class="container-center">
+        <img src="img/arrows.png" alt="" />
+      </div>
+      <div class="input-container">
+        <img class="flag" src="img/eu.png" alt="" />
+        <input id="eur" type="text" />
+        <span>EUR</span>
+      </div>
+      <div class="container-center">
+        <button onclick="calcv2()">Berchnen</button>
+      </div>
+    </div>
+</div>
+   
+    <script src="script.js"></script>
+  </body>
+</html>
